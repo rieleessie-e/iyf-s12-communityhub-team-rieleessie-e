@@ -1,16 +1,63 @@
-# React + Vite
+﻿# KaziConnect – CommunityHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KaziConnect is a community platform built with React. It allows users to explore community posts and share opportunities, ideas and updates.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navigation with React Router.
+- Home page introducing the platform.
+- Opportunities page displaying posts from JSONPlaceholder.
+- Individual post details using dynamic route parameters.
+- Create Post form with title and content fields.
+- Local storage for saving user-created posts.
+- Loading and error states when fetching posts.
+- Reusable Navbar and Footer components.
+- Custom useFetch and useLocalStorage hooks.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- React Router DOM
+- CSS
+- JSONPlaceholder API
+- Browser Local Storage
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+    npm install
+
+Start the development server:
+
+    npm run dev
+
+Build the project:
+
+    npm run build
+
+Run lint checks:
+
+    npm run lint
+
+## Application Routes
+
+| Route | Description |
+|---|---|
+| / | Home page |
+| /posts | Explore community posts |
+| /posts/:id | View an individual post |
+| /create-post | Create a community post |
+| /about | About KaziConnect |
+
+## API
+
+Posts are retrieved from:
+
+https://jsonplaceholder.typicode.com/posts
+
+## Contributors
+
+This project is part of the IYF Season 12 Week 9 CommunityHub team assignment.
