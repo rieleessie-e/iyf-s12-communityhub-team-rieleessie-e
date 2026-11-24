@@ -1,0 +1,272 @@
+
+/* KaziConnect responsive styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fc;
+  color: #243047;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #243047;
+  color: white;
+  padding: 16px 6%;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: white;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #e07a5f;
+}
+
+.hero-section {
+  background: #243047;
+  color: white;
+  padding: 90px 20px;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #e07a5f;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.hero-content h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.2;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 20px auto;
+  color: #e5eaf2;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-primary {
+  background: #e07a5f;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #c9654b;
+}
+
+.btn-secondary {
+  background: white;
+  color: #243047;
+}
+
+.home-intro {
+  max-width: 850px;
+  margin: 55px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.page-container {
+  max-width: 1100px;
+  min-height: 65vh;
+  margin: auto;
+  padding: 50px 24px;
+}
+
+.page-heading {
+  margin-bottom: 32px;
+}
+
+.page-heading h1 {
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.post-card,
+.post-detail-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(36, 48, 71, 0.08);
+  overflow-wrap: anywhere;
+}
+
+.post-tag {
+  color: #c9654b;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.post-card h2 {
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.post-link {
+  color: #234e70;
+  font-weight: bold;
+}
+
+.post-detail-card {
+  margin-top: 24px;
+}
+
+.create-post-form {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+}
+
+.create-post-form input,
+.create-post-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd2df;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.create-post-form input:focus,
+.create-post-form textarea:focus {
+  outline: 2px solid #234e70;
+  border-color: transparent;
+}
+
+.create-post-form button {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.form-message {
+  color: #234e70;
+  font-weight: bold;
+}
+
+.footer {
+  background: #243047;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 40px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 60px 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-container {
+    padding: 32px 16px;
+  }
+
+  .page-heading h1 {
+    font-size: 28px;
+  }
+
+  .create-post-form {
+    padding: 18px;
+  }
+}
