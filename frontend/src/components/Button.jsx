@@ -1,6 +1,10 @@
 function Button() {
+  function handleClick() {
+    alert("welcome to kazi connect!");
+  }
+
   return (
-    <button>
+    <button onClick={handleClick}>
       Get Started
     </button>
   );

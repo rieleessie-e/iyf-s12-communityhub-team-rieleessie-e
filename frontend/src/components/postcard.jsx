@@ -1,13 +1,19 @@
-function PostCard(props) {
+function PostCard({ title, description, employer }) {
+  function handleViewOpportunity() {
+    window.alert("Button clicked successfully!");
+  }
+
   return (
     <article className="post-card">
-      <h3>{props.title}</h3>
+      <h3>{title}</h3>
 
-      <p>{props.description}</p>
+      <p>{description}</p>
 
-      <p>Posted by: {props.employer}</p>
+      <p>Posted by: {employer}</p>
 
-      <button>View Opportunity</button>
+      <button onClick={handleViewOpportunity}>
+        View Opportunity
+      </button>
     </article>
   );
 }
